@@ -263,4 +263,4 @@ Vídeo demonstrativo:
 
 GitHub do projeto:
 
-> LINK_DO_REPOSITORIO
+> [LINK_DO_REPOSITORIO](https://github.com/rafaelclins/global-solution-mission-control-ai)
