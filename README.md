@@ -255,7 +255,7 @@ O objetivo principal é demonstrar:
 
 Vídeo demonstrativo:
 
-> LINK_DO_VIDEO
+> [LINK_DO_VÍDEO] (https://youtube.com/shorts/-ermS08dZgY?si=XE66iO8xhddlBbKk)
 
 ---
 
