@@ -1,18 +1,18 @@
-Mission Control AI — MobilitySat
+# Mission Control AI — MobilitySat
 
 Sistema de monitoramento operacional com IA generativa para análise contextual de telemetria espacial simulada, desenvolvido para a Global Solution 2026 da FIAP.
 
-⸻
+---
 
-Integrantes
+## Integrantes
 
-* Rafael Lins — RM: 570588
-* Cauã Paes — RM: 569906
-* João Pedro Soler — RM: 569725
+- Rafael Lins — RM: 570588
+- Cauã Paes — RM: 569906
+- João Pedro Soler — RM: 569725
 
-⸻
+---
 
-Objetivo do Projeto
+## Objetivo do Projeto
 
 O objetivo deste projeto é desenvolver um sistema de análise operacional baseado em Inteligência Artificial capaz de interpretar telemetria espacial simulada e gerar diagnósticos contextualizados sobre o estado da missão.
 
@@ -20,53 +20,54 @@ A proposta foi desenvolvida dentro do contexto da Global Solution 2026 da FIAP, 
 
 O sistema simula:
 
-* Coleta de telemetria
-* Análise de alertas operacionais
-* Interpretação contextual via IA
-* Avaliação de impactos terrestres da missão
+- Coleta de telemetria
+- Análise de alertas operacionais
+- Interpretação contextual via IA
+- Avaliação de impactos terrestres da missão
 
-⸻
+---
 
-Sobre a Missão MobilitySat
+## Sobre a Missão MobilitySat
 
 A MobilitySat é uma missão orbital fictícia criada para monitoramento de sistemas de posicionamento e sincronização utilizados em:
 
-* Logística autônoma
-* Agricultura de precisão
-* Rastreamento de frotas
-* Navegação inteligente
-* Mobilidade conectada
+- Logística autônoma
+- Agricultura de precisão
+- Rastreamento de frotas
+- Navegação inteligente
+- Mobilidade conectada
 
 A missão possui foco operacional em integridade GNSS, estabilidade orbital e confiabilidade de sincronização.
 
-⸻
+---
 
-Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
-* Geração de telemetria simulada
-* Sistema de alertas operacionais
-* Cenários pré-definidos de missão
-* Integração com IA generativa via OpenRouter
-* System Prompt contextualizado
-* Análise operacional automatizada
-* Diagnóstico técnico contextualizado
-* Avaliação de impactos terrestres
-* Interface CLI em terminal
+- Geração de telemetria simulada
+- Sistema de alertas operacionais
+- Cenários pré-definidos de missão
+- Integração com IA generativa via OpenRouter
+- System Prompt contextualizado
+- Análise operacional automatizada
+- Diagnóstico técnico contextualizado
+- Avaliação de impactos terrestres
+- Interface CLI em terminal
 
-⸻
+---
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-* Python 3.13
-* OpenRouter API
-* Meta Llama 3.1 8B Instruct
-* python-dotenv
-* PyCharm
+- Python 3.13
+- OpenRouter API
+- Meta Llama 3.1 8B Instruct
+- python-dotenv
+- PyCharm
 
-⸻
+---
 
-Estrutura do Projeto
+## Estrutura do Projeto
 
+```text
 global-solution-mission-control-ai/
 │
 ├── main.py
@@ -90,135 +91,160 @@ global-solution-mission-control-ai/
     ├── alertas.py
     ├── engine.py
     └── ui.py
+```
 
-⸻
+---
 
-Funcionamento do Sistema
+## Funcionamento do Sistema
 
 O sistema segue o seguinte fluxo operacional:
 
+```text
 telemetria
 → alertas operacionais
 → montagem de contexto
 → análise da IA
 → diagnóstico da missão
+```
 
 A IA recebe:
 
-* Telemetria atual
-* Alertas detectados
-* Contexto da missão
-* Impactos terrestres relacionados
+- Telemetria atual
+- Alertas detectados
+- Contexto da missão
+- Impactos terrestres relacionados
 
 Com base nessas informações, ela produz uma análise operacional contextualizada.
 
-⸻
+---
 
-Cenários Implementados
+## Cenários Implementados
 
-Cenário	Descrição
-Normal	Operação estável dentro dos parâmetros esperados
-Alerta	Instabilidade moderada detectada
-Crítico	Múltiplas falhas operacionais simultâneas
-Aleatório	Telemetria gerada dinamicamente
+| Cenário | Descrição |
+|----------|----------|
+| Normal | Operação estável dentro dos parâmetros esperados |
+| Alerta | Instabilidade moderada detectada |
+| Crítico | Múltiplas falhas operacionais simultâneas |
+| Aleatório | Telemetria gerada dinamicamente |
 
-⸻
+---
 
-Parâmetros de Telemetria
+## Parâmetros de Telemetria
 
 O sistema simula:
 
-* Nível de energia
-* Temperatura operacional
-* Precisão GNSS
-* Sincronização orbital
+- Nível de energia
+- Temperatura operacional
+- Precisão GNSS
+- Sincronização orbital
 
 Esses parâmetros são utilizados para gerar alertas e alimentar a análise contextual da IA.
 
-⸻
+---
 
-Impacto Terrestre
+## Impacto Terrestre
 
 A missão MobilitySat possui relação direta com sistemas críticos utilizados na Terra.
 
 Falhas operacionais podem impactar:
 
-* Rotas logísticas automatizadas
-* Agricultura de precisão
-* Sincronização de transporte inteligente
-* Navegação autônoma
-* Rastreamento de veículos
+- Rotas logísticas automatizadas
+- Agricultura de precisão
+- Sincronização de transporte inteligente
+- Navegação autônoma
+- Rastreamento de veículos
 
-⸻
+---
 
-Capturas do Sistema
+## Capturas do Sistema
 
-Tela Inicial
+### Tela Inicial
 
-Análise Operacional
+![Tela Inicial](assets/screenshot_banner.png)
 
-⸻
+### Análise Operacional
 
-Instalação
+![Análise Operacional](assets/screenshot_analise.png)
+
+---
+
+## Instalação
 
 Clone o repositório:
 
+```bash
 git clone https://github.com/rafaelclins/global-solution-mission-control-ai
+```
 
 Acesse a pasta do projeto:
 
+```bash
 cd global-solution-mission-control-ai
+```
 
 Instale as dependências:
 
+```bash
 pip install -r requirements.txt
+```
 
-⸻
+---
 
-Configuração da API
+## Configuração da API
 
-Crie um arquivo .env na raiz do projeto:
+Crie um arquivo `.env` na raiz do projeto:
 
+```env
 OPENROUTER_API_KEY=sua_chave_aqui
+```
 
-⸻
+---
 
-Execução
+## Execução
 
 Execute o sistema com:
 
+```bash
 python main.py
+```
 
-⸻
+---
 
-Exemplo de Fluxo
+## Exemplo de Fluxo
 
+```text
 === MISSION CONTROL AI ===
+
 Escolha o cenário da missão:
+
 1 - Normal
 2 - Alerta
 3 - Crítico
 4 - Aleatório
+```
 
 O sistema gera:
 
-* Telemetria
-* Alertas operacionais
-* Análise contextual da IA
+- Telemetria
+- Alertas operacionais
+- Análise contextual da IA
 
-⸻
+---
 
-Exemplo de Análise
+## Exemplo de Análise
 
+```text
 CRÍTICO: perda significativa de precisão GNSS.
+
 Impactos potenciais:
 - falhas logísticas
 - erros de navegação autônoma
 - comprometimento agrícola
+```
 
-⸻
+---
 
-Adaptações da Implementação
+## Adaptações da Implementação
 
 O projeto de referência apresentava uma interface CLI baseada em comandos. Durante o desenvolvimento, optamos por utilizar um fluxo baseado em cenários pré-definidos (Normal, Alerta, Crítico e Aleatório).
 
@@ -226,43 +252,43 @@ Essa decisão foi tomada para facilitar a demonstração dos diferentes estados 
 
 A arquitetura principal proposta foi mantida, incluindo:
 
-* Classe MissionEngine
-* Geração de telemetria simulada
-* Sistema de alertas
-* Integração com IA generativa
-* System Prompt contextualizado
-* Análise operacional automatizada
+- Classe MissionEngine
+- Geração de telemetria simulada
+- Sistema de alertas
+- Integração com IA generativa
+- System Prompt contextualizado
+- Análise operacional automatizada
 
-⸻
+---
 
-Segurança
+## Segurança
 
-* A API Key é armazenada via variável de ambiente
-* O arquivo .env não é enviado ao GitHub
-* O projeto utiliza .gitignore para proteção de credenciais
+- A API Key é armazenada via variável de ambiente
+- O arquivo `.env` não é enviado ao GitHub
+- O projeto utiliza `.gitignore` para proteção de credenciais
 
-⸻
+---
 
-Limitações
+## Limitações
 
 O sistema possui foco acadêmico e operacional simulado.
 
 Não representa:
 
-* Física espacial real
-* Telemetria orbital científica
-* Sistemas espaciais reais
+- Física espacial real
+- Telemetria orbital científica
+- Sistemas espaciais reais
 
 O objetivo principal é demonstrar:
 
-* Integração com IA generativa
-* Engenharia de contexto
-* Análise operacional automatizada
-* Interpretação de telemetria simulada
+- Integração com IA generativa
+- Engenharia de contexto
+- Análise operacional automatizada
+- Interpretação de telemetria simulada
 
-⸻
+---
 
-Demonstração
+## Demonstração
 
 Vídeo demonstrativo do funcionamento do sistema:
 
@@ -270,15 +296,15 @@ https://youtube.com/shorts/-ermS08dZgY?si=XE66iO8xhddlBbKk
 
 O vídeo apresenta:
 
-* Inicialização do sistema
-* Seleção de cenários operacionais
-* Geração de telemetria simulada
-* Detecção de alertas
-* Análise contextual realizada pela IA
+- Inicialização do sistema
+- Seleção de cenários operacionais
+- Geração de telemetria simulada
+- Detecção de alertas
+- Análise contextual realizada pela IA
 
-⸻
+---
 
-Repositório
+## Repositório
 
 GitHub do projeto:
 
