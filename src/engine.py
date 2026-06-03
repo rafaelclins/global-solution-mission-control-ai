@@ -9,43 +9,54 @@ from src.alertas import analisar_alertas
 from src.ai_client import ask_ai
 
 
-def executar_missao(system_prompt, modo="aleatorio"):
+class MissionEngine:
 
-    # Seleciona cenário
-    if modo == "normal":
-        telemetria = cenario_normal()
+    def __init__(self):
 
-    elif modo == "alerta":
-        telemetria = cenario_alerta()
+        # Carrega system prompt
+        with open("prompts/system_prompt.md", "r", encoding="utf-8") as file:
+            self.system_prompt = file.read()
 
-    elif modo == "critico":
-        telemetria = cenario_critico()
+    def analyze(self, modo="aleatorio"):
 
-    else:
-        telemetria = gerar_telemetria()
+        # Seleciona cenário
+        if modo == "normal":
+            telemetria = cenario_normal()
 
-    # Analisa alertas
-    alertas = analisar_alertas(telemetria)
+        elif modo == "alerta":
+            telemetria = cenario_alerta()
 
+        elif modo == "critico":
+            telemetria = cenario_critico()
 
-    # Monta contexto operacional
-    contexto = f"""
-    TELEMETRIA DA MISSÃO:
+        else:
+            telemetria = gerar_telemetria()
 
-    Energia: {telemetria['energia']}%
-    Temperatura: {telemetria['temperatura']}°C
-    Precisão GPS: {telemetria['precisao_gps']} metros
-    Sincronização: {telemetria['sincronizacao']}
+        # Analisa alertas
+        alertas = analisar_alertas(telemetria)
 
-    ALERTAS OPERACIONAIS:
-    {chr(10).join(alertas)}
+        # Monta contexto operacional
+        contexto = f"""
+MISSÃO: MobilitySat
 
-    Gere uma análise operacional da situação atual da missão.
-    """
+TELEMETRIA:
+- Energia: {telemetria['energia']}%
+- Temperatura: {telemetria['temperatura']}°C
+- Precisão GPS: {telemetria['precisao_gps']} metros
+- Sincronização: {telemetria['sincronizacao']}
 
+ALERTAS:
+{chr(10).join(alertas)}
 
-    # Envia para IA
-    resposta = ask_ai(system_prompt, contexto)
+Analise os riscos operacionais da missão,
+os impactos terrestres
+e sugira ações recomendadas.
+"""
 
+        # Consulta IA
+        resposta = ask_ai(
+            self.system_prompt,
+            contexto
+        )
 
-    return telemetria, alertas, resposta
+        return telemetria, alertas, resposta

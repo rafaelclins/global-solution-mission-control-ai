@@ -1,16 +1,19 @@
-from src.engine import executar_missao
+from banner_ascii import show_banner
+
+from src.ui import show_menu
+from src.engine import MissionEngine
 
 
-# Carrega o system prompt
-with open("prompts/system_prompt.md", "r", encoding="utf-8") as file:
-    system_prompt = file.read()
+# Banner inicial
+show_banner()
 
 
-# Banner principal
-print("=" * 50)
-print("         MISSION CONTROL AI")
-print("         MobilitySat Division")
-print("=" * 50)
+# Interface inicial
+show_menu()
+
+
+# Inicializa engine da missão
+engine = MissionEngine()
 
 
 # Escolha do cenário
@@ -25,7 +28,7 @@ print("4 - Aleatório")
 opcao = input("\nDigite a opção: ")
 
 
-# Define modo
+# Define cenário
 if opcao == "1":
     modo = "normal"
 
@@ -40,10 +43,10 @@ else:
 
 
 # Executa missão
-telemetria, alertas, resposta = executar_missao(system_prompt, modo)
+telemetria, alertas, resposta = engine.analyze(modo)
 
 
-# Exibe telemetria
+# TELEMETRIA
 print("\n" + "=" * 50)
 print("               TELEMETRIA")
 print("=" * 50)
@@ -52,7 +55,7 @@ for chave, valor in telemetria.items():
     print(f"{chave}: {valor}")
 
 
-# Exibe alertas
+# ALERTAS
 print("\n" + "=" * 50)
 print("         ALERTAS OPERACIONAIS")
 print("=" * 50)
@@ -61,7 +64,7 @@ for alerta in alertas:
     print(f"- {alerta}")
 
 
-# Exibe análise da IA
+# ANÁLISE DA IA
 print("\n" + "=" * 50)
 print("           ANÁLISE DA IA")
 print("=" * 50)
