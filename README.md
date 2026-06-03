@@ -68,7 +68,7 @@ Tecnologias Utilizadas
 Estrutura do Projeto
 
 global-solution-mission-control-ai/
-│
+
 ├── main.py
 ├── banner_ascii.py
 ├── README.md
