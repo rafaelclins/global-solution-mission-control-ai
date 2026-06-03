@@ -20,10 +20,10 @@ A proposta foi desenvolvida dentro do contexto da Global Solution 2026 da FIAP, 
 
 O sistema simula:
 
-* coleta de telemetria
-* análise de alertas operacionais
-* interpretação contextual via IA
-* avaliação de impactos terrestres da missão
+* Coleta de telemetria
+* Análise de alertas operacionais
+* Interpretação contextual via IA
+* Avaliação de impactos terrestres da missão
 
 ⸻
 
@@ -31,11 +31,11 @@ Sobre a Missão MobilitySat
 
 A MobilitySat é uma missão orbital fictícia criada para monitoramento de sistemas de posicionamento e sincronização utilizados em:
 
-* logística autônoma
-* agricultura de precisão
-* rastreamento de frotas
-* navegação inteligente
-* mobilidade conectada
+* Logística autônoma
+* Agricultura de precisão
+* Rastreamento de frotas
+* Navegação inteligente
+* Mobilidade conectada
 
 A missão possui foco operacional em integridade GNSS, estabilidade orbital e confiabilidade de sincronização.
 
@@ -68,7 +68,7 @@ Tecnologias Utilizadas
 Estrutura do Projeto
 
 global-solution-mission-control-ai/
-
+│
 ├── main.py
 ├── banner_ascii.py
 ├── README.md
@@ -105,10 +105,10 @@ telemetria
 
 A IA recebe:
 
-* telemetria atual
-* alertas detectados
-* contexto da missão
-* impactos terrestres relacionados
+* Telemetria atual
+* Alertas detectados
+* Contexto da missão
+* Impactos terrestres relacionados
 
 Com base nessas informações, ela produz uma análise operacional contextualizada.
 
@@ -128,10 +128,10 @@ Parâmetros de Telemetria
 
 O sistema simula:
 
-* nível de energia
-* temperatura operacional
-* precisão GNSS
-* sincronização orbital
+* Nível de energia
+* Temperatura operacional
+* Precisão GNSS
+* Sincronização orbital
 
 Esses parâmetros são utilizados para gerar alertas e alimentar a análise contextual da IA.
 
@@ -143,11 +143,19 @@ A missão MobilitySat possui relação direta com sistemas críticos utilizados 
 
 Falhas operacionais podem impactar:
 
-* rotas logísticas automatizadas
-* agricultura de precisão
-* sincronização de transporte inteligente
-* navegação autônoma
-* rastreamento de veículos
+* Rotas logísticas automatizadas
+* Agricultura de precisão
+* Sincronização de transporte inteligente
+* Navegação autônoma
+* Rastreamento de veículos
+
+⸻
+
+Capturas do Sistema
+
+Tela Inicial
+
+Análise Operacional
 
 ⸻
 
@@ -194,9 +202,9 @@ Escolha o cenário da missão:
 
 O sistema gera:
 
-* telemetria
-* alertas operacionais
-* análise contextual da IA
+* Telemetria
+* Alertas operacionais
+* Análise contextual da IA
 
 ⸻
 
@@ -218,12 +226,12 @@ Essa decisão foi tomada para facilitar a demonstração dos diferentes estados 
 
 A arquitetura principal proposta foi mantida, incluindo:
 
-* classe MissionEngine
-* geração de telemetria simulada
-* sistema de alertas
-* integração com IA generativa
+* Classe MissionEngine
+* Geração de telemetria simulada
+* Sistema de alertas
+* Integração com IA generativa
 * System Prompt contextualizado
-* análise operacional automatizada
+* Análise operacional automatizada
 
 ⸻
 
@@ -241,16 +249,16 @@ O sistema possui foco acadêmico e operacional simulado.
 
 Não representa:
 
-* física espacial real
-* telemetria orbital científica
-* sistemas espaciais reais
+* Física espacial real
+* Telemetria orbital científica
+* Sistemas espaciais reais
 
 O objetivo principal é demonstrar:
 
-* integração com IA generativa
-* engenharia de contexto
-* análise operacional automatizada
-* interpretação de telemetria simulada
+* Integração com IA generativa
+* Engenharia de contexto
+* Análise operacional automatizada
+* Interpretação de telemetria simulada
 
 ⸻
 
@@ -262,11 +270,11 @@ https://youtube.com/shorts/-ermS08dZgY?si=XE66iO8xhddlBbKk
 
 O vídeo apresenta:
 
-* inicialização do sistema
-* seleção de cenários operacionais
-* geração de telemetria simulada
-* detecção de alertas
-* análise contextual realizada pela IA
+* Inicialização do sistema
+* Seleção de cenários operacionais
+* Geração de telemetria simulada
+* Detecção de alertas
+* Análise contextual realizada pela IA
 
 ⸻
 
